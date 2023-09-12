@@ -24,12 +24,12 @@
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#About-me" class="nav-link" aria-current="page">About</a></li>
                 <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
             </ul>
         </header>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5" id="About-me">
+    <div class="container col-md-8 px-4 py-5" id="About-me">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="./images/me.jpg" class="d-block mx-lg-auto img-fluid g-md-3" alt="Bootstrap Themes"
@@ -68,8 +68,33 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
-
+            <div class="container mt-5" id="Contact">
+                <h2>Contact Me!</h2>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="emailInfo" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="emailInfo" required placeholder="Enter email">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phoneNumber" class="form-label">Phone Number(optional)</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (352) 390-4320">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="comments" class="form-label">Comments, questions?</label>
+                        <textarea class="form-control" id="comments" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-lg px-4 me-md-2">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
